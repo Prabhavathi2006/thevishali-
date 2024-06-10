@@ -1,0 +1,11 @@
+def expand_string(s):
+    i = 0
+    while i < len(s):
+        char = s[i]
+        count = int(s[i + 1])
+        print(char * count, end='')
+        i += 2
+# Input
+s = input().strip()
+# Output
+expand_string(s)
